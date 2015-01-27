@@ -1,14 +1,26 @@
 CUDA Team
 Exploring CUDA for PDC
 
-Current project contains mandelbrot CUDA code from the Macalester CSinParallel module.
-To compile run the command make all.
-To execute run the command ./mandelbrot.
+Current project contains Libby Shoop's mandelbrot CUDA code from the Macalester CSinParallel module.
+THIS IS NOT OUR CODE
+To compile run the command make all
+To execute run the command ./mandelbrot
 This draws a mandelbrot set to the screen from a png file.
 Use ./benchmark and ./XBenchmark to get timing information without graphical display
 
-In opengl folder:
+Current project contains Benedek Vartok's real-time mandelbrot generation with openGL shaders.
+THIS IS NOT OUR CODE
+To compile simply run make
+To execute run the command ./gl-shaders
+Zoom/navigate with WASD and E and R.
+Create more iterations using arrow keys.
+
+In ProjectCode folder:
+This code was written by Virignia Pierson and Ben Lipson.
 Currently it's a non-parallelized version of the mandelbrot set.
 Coded instead of rendered from a picture.
-To compile use gcc -lglut -lGL -lGLU -o mandelbrot mandelbrot.cpp
+To compile use gcc -lglut -lGL -lGLU -o mandelbrot mandelbrot.c
 To excute use ./mandelbrot
+Also has a non-parallelized version of the koch snowflake.
+To compile use gcc -lglut -lGL -lm -o koch koch.c
+To execute use ./koch
