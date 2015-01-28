@@ -24,3 +24,6 @@ To excute use ./mandelbrot
 Also has a non-parallelized version of the koch snowflake.
 To compile use gcc -lglut -lGL -lm -o koch koch.c
 To execute use ./koch
+Also has a non-parallelized version of the fractal tree.
+To compile use gcc -lglut -lGL -lGLU -lm -o tree tree.c
+To execute use ./tree
