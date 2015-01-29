@@ -17,9 +17,9 @@ Create more iterations using arrow keys.
 
 In ProjectCode folder:
 This code was written by Virignia Pierson and Ben Lipson.
-Currently it's a non-parallelized version of the mandelbrot set.
+Currently it's a parallelized version of the mandelbrot set.
 Coded instead of rendered from a picture.
-To compile use gcc -lglut -lGL -lGLU -o mandelbrot mandelbrot.c
+To compile use nvcc -lglut -lGL -lGLU -lcudart -lpthread -o mandelbrot mandelbrot.c
 To excute use ./mandelbrot
 Also has a non-parallelized version of the koch snowflake.
 To compile use gcc -lglut -lGL -lm -o koch koch.c
@@ -27,3 +27,7 @@ To execute use ./koch
 Also has a non-parallelized version of the fractal tree.
 To compile use gcc -lglut -lGL -lGLU -lm -o tree tree.c
 To execute use ./tree
+Also has a parallelized version of a particle rendering system
+It renders over 1 million particles in parallel!
+To compile use nvcc -lglut -lGL -lGLU -lGLEW -lcudart -o particles particles.cu
+To execute use ./particles
