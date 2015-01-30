@@ -74,7 +74,7 @@ void motion(int x, int y)
 
   	if(buttons & 4)
     {
-      	translate_z += dy * 0.01;
+      	translate_z += dy * 10.0;
     }
   	mouse_x = x;
   	mouse_y = y;
@@ -270,7 +270,7 @@ static void display(void)
 
     // Set the rotation and translation for the camera
   	glTranslatef(0.0, 0.0, translate_z);
-  	glRotatef(90.0, 1.0, 0.0, 0.0);
+  	//glRotatef(90.0, 1.0, 0.0, 0.0);
 
   	// Render from the vertex buffer object
   	glBindBuffer(GL_ARRAY_BUFFER, vbo);

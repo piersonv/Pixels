@@ -1,33 +1,35 @@
 CUDA Team
-Exploring CUDA for PDC
-
-Current project contains Libby Shoop's mandelbrot CUDA code from the Macalester CSinParallel module.
-THIS IS NOT OUR CODE
-To compile run the command make all
-To execute run the command ./mandelbrot
-This draws a mandelbrot set to the screen from a png file.
-Use ./benchmark and ./XBenchmark to get timing information without graphical display
-
-Current project contains Benedek Vartok's real-time mandelbrot generation with openGL shaders.
-THIS IS NOT OUR CODE
-To compile simply run make
-To execute run the command ./gl-shaders
-Zoom/navigate with WASD and E and R.
-Create more iterations using arrow keys.
+Exploring CUDA through openGL for PDC
 
 In ProjectCode folder:
+
 This code was written by Virignia Pierson and Ben Lipson.
-Currently it's a parallelized version of the mandelbrot set.
+
+Currently has a non-working parallelized version of the mandelbrot set.
 Coded instead of rendered from a picture.
 To compile use nvcc -lglut -lGL -lGLU -lcudart -lpthread -o mandelbrot mandelbrot.c
 To excute use ./mandelbrot
+
 Also has a non-parallelized version of the koch snowflake.
 To compile use gcc -lglut -lGL -lm -o koch koch.c
 To execute use ./koch
+
 Also has a non-parallelized version of the fractal tree.
 To compile use gcc -lglut -lGL -lGLU -lm -o tree tree.c
 To execute use ./tree
+
 Also has a parallelized version of a particle rendering system
+Written based on Igor Sevo's 'A Million Particles in CUDA and OpenGL' tutorial
 It renders over 1 million particles in parallel!
 To compile use nvcc -lglut -lGL -lGLU -lGLEW -lcudart -o particles particles.cu
 To execute use ./particles
+
+Has a side-view to see the sine wave
+To compile use nvcc -lglut -lGL -lGLU -lGLEW -lcudart -o particlesRotated particlesRotated.cu
+To execute use ./particlesRotated
+
+Also has a neuroscience simulation using particles to represent neurotransmitters inside brain chambers
+This extension was written entirely by Virginia Pierson and Ben Lipson
+To compile use nvcc -lglut -lGL -lGLU -lGLEW -lcudart -o neuroSim neuroSim.cu
+To execute use ./neuroSim
+
