@@ -3,7 +3,7 @@ Exploring CUDA through openGL for PDC
 
 In ProjectCode folder:
 
-This code was written by Virignia Pierson and Ben Lipson.
+This code was written by vierson and blipson.
 
 Currently has a non-working parallelized version of the mandelbrot set.
 Coded instead of rendered from a picture.
